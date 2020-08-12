@@ -46,6 +46,8 @@ img {
 	border: 1px solid transparent;
 	border-radius: 20px;
 	transition: all .5s;
+	font-weight: 500;
+	font-size: 18px;
 }
 .header__menu li a:hover {
 	border: 1px solid #000;
@@ -442,4 +444,19 @@ img {
 	margin-left: 10px;
 	font-size: 20px;
 	font-weight: 500;
+}
+footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #111;
+}
+.footer__content {
+	color: #fff;
+	font-size: 18px;
+	opacity: .7;
+	text-align: center;
+	line-height: 30px;
+}
+.footer__content a {
+	color: #e28b00;
 }
