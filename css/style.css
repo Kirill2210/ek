@@ -478,22 +478,96 @@ img {
 	font-size: 20px;
 	font-weight: 500;
 }
+.payment {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.payment span {
+	color: #f80000;
+	font-size: 18px;
+}
+.payment-title {
+	color: #000;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.payment__list ul {
+	list-style-type: disc;
+	padding-left: 20px;
+}
+.payment__list ul li {
+	list-style-type: disc;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.payment__text {
+	margin-bottom: 15px;
+	margin-top: 15px;
+	font-size: 18px;
+}
 footer {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background-color: #111;
+	opacity: .8;
 }
-.footer__content {
+footer iframe {
+	width: 100%;
+}
+.footer__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 40px;
+	margin-left: -20px;
+	flex-wrap: wrap;
+}
+.footer__item {
+	max-width: calc(25% - 20px);
+	width: 100%;
 	color: #fff;
-	font-size: 18px;
-	opacity: .7;
-	text-align: center;
-	line-height: 30px;
+	opacity: .9;
+	margin-left: 20px;
+	position: relative;
+	padding-left: 20px;
 }
-.footer__content a {
+.footer__item a {
+	color: #fff;
+	opacity: .9;
+}
+.footer__item span {
+	display: inline-block;
+	width: 100%;
+}
+.footer__item-title {
+	margin-bottom: 5px;
+	font-weight: 700;
 	color: #e28b00;
 }
-
+.footer__item::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-family: 'FontAwesome';
+	font-size: 18px;
+	color: #e28b00;
+}
+.item-map::before {
+	content: '\f041';
+	
+}
+.item-phone::before {
+	content: '\f095';
+}
+.item-mail::before {
+	content: '\f0e0';
+	font-size: 15px;
+}
+.item-clock::before {
+	content: '\f017';
+}
 .data {
 	padding-top: 135px;
 	padding-bottom: 90px;
@@ -516,11 +590,12 @@ footer {
 	margin: 40px 0;
 	text-align: center;
 }
-.order__btn button {
+.order__btn a {
 	border-radius: 25px;
 	background-color: #e28b00;
 	padding: 15px 45px;
 	color: #fff;
+	display: inline-block;
 	outline: none;
 	cursor: pointer;
 	font-size: 22px;
@@ -659,6 +734,10 @@ footer {
 		bottom: 100px;
 		right: -120px;
 	}
+	.footer__item {
+		max-width: calc(50% - 20px);
+		margin-bottom: 20px;
+	}
 }
 @media (max-width: 750px) {
 	.advantages__time-inner {
@@ -731,6 +810,14 @@ footer {
 	}
 	.reviews__item {
 		flex-basis: 100%;
+	}
+	.footer__inner {
+		margin-left: 0;
+	}
+	.footer__item {
+		max-width: 100%;
+		margin-bottom: 20px;
+		margin-left: 0;
 	}
 }
 @media (max-width: 500px) {

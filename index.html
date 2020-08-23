@@ -7,6 +7,7 @@
 	<title>TIME FOR YOU</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,11 +17,11 @@
 			<div class="header__top">
 				<nav>
 					<ul class="header__menu">
-						<li><a href="#">Комплектация</a></li>
-						<li><a href="#">Как применять</a></li>
-						<li><a href="#">Распаковка</a></li>
-						<li><a href="#">Отзывы</a></li>
-						<li><a href="#">Оплата</a></li>
+						<li><a href="#backpack">Комплектация</a></li>
+						<li><a href="#advantages">Как применять</a></li>
+						<li><a href="#backpack">Распаковка</a></li>
+						<li><a href="#reviews">Отзывы</a></li>
+						<li><a href="#payment">Оплата</a></li>
 					</ul>
 				</nav>
 				<div class="header__list">
@@ -36,7 +37,7 @@
 			</div>
 			<div class="header__content">
 				<div class="header__content-title">
-					Волошебный коврик - рисуем водой!
+					Волшебный коврик - рисуем водой!
 				</div>
 				<div class="header__content-inner">
 					<div class="header__content-img">
@@ -58,10 +59,10 @@
 			</div>
 		</div>
 	</header>
-	<section class="advantages">
+	<section class="advantages" id="advantages">
 		<div class="container">
 			<div class="advantages__title title">
-				Теперь никакой грязи и пятен от грязи!
+				Теперь никакой грязи и пятен от красок!
 			</div>
 			<div class="advantages__suptitle suptitle">
 				Просто налейте воду в маркеры и рисуйте
@@ -77,7 +78,7 @@
 				Рисунки, нарисованные водой, исчезают через 15-20 минут, вы можете рисовать снова и снова.
 			</div>
 			<div class="order__btn">
-				<button type="submit">Заказать коврик по Акции!</button>
+				<a href="#order">Заказать коврик по Акции!</a>
 			</div>
 			<div class="advantages__time">
 				<div class="advantages__time-title">
@@ -94,7 +95,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="backpack">
+	<section class="backpack" id="backpack">
 		<div class="container">
 			<div class="title">
 				Что у нас в рюкзачке?!
@@ -128,18 +129,18 @@
 					</ul>
 				</div>
 			</div>
-			<div class="order">
+			<div class="order" id="order">
 				<div class="order__text">
 					<p>Заказать набор: Развивающий коврик для рисования водными маркерами!</p>
 					<p class="price">Со скидкой <span>52%</span> до 30.09.2020 года</p>
 					<p class="price"><span>1754 руб.</span> <strike>3700 руб.</strike></p>
 				</div>
 				<div class="order__form">
-					<form action="">
+					<form action="order.php" method="post">
 						<input type="text" placeholder="Имя">
 						<input type="text" placeholder="Телефон">
 						<button type="submit">Заказать</button>
-						<p>Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+						<p>Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="politic.html" target="_blank">политикой конфиденциальности</a></p>
 					</form>
 				</div>
 			</div>
@@ -188,7 +189,7 @@
 				</div>
 			</div>
 			<div class="order__btn">
-				<button type="submit">Заказать коврик по Акции!</button>
+				<a href="#order">Заказать коврик по Акции!</a>
 			</div>
 			<div class="spend__bottom">
 				<div class="spend__text">
@@ -240,23 +241,23 @@
 				<img src="images/gift.jpg">
 			</div>
 		</div>
-		<div class="order">
+		<div class="order" id="order">
 			<div class="order__text">
 				<p>Заказать набор: Развивающий коврик для рисования водными маркерами!</p>
 				<p class="price">Со скидкой <span>52%</span> до 30.09.2020 года</p>
 				<p class="price"><span>1754 руб.</span> <strike>3700 руб.</strike></p>
 			</div>
 			<div class="order__form">
-				<form action="">
+				<form action="order.php" method="post">
 					<input type="text" placeholder="Имя">
 					<input type="text" placeholder="Телефон">
 					<button type="submit">Заказать</button>
-					<p>Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+					<p>Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="politic.html" target="_blank">политикой конфиденциальности</a></p>
 				</form>
 			</div>
 		</div>
 	</section>
-	<section class="reviews">
+	<section class="reviews" id="reviews">
 		<div class="container">
 			<div class="title">
 				Отзывы наших клиентов
@@ -349,19 +350,88 @@
 			</div>
 		</div>
 	</section>
-	<footer>
+	<section class="payment" id="payment">
 		<div class="container">
-			<div class="footer__content">
-				Фактический адрес: Россия, г. Иваново, ул. Бубнова, д. 40А<br>
-				Электронная почта: pelicantoys@mail.ru<br>
-				Телефон: +7 (4932) 500-287<br>
-				Реквизиты:<br>
-				ООО «Пеликан Хэппи Тойс»<br>
-				PELICAN HAPPY TOYS<br>ИНН 3702242101 / ОГРН 1203700007818<br>
-				Юридический адрес: Россия, г. Иваново, ул. Колотилова, д. 49, 3 этаж, пом. 10<br>
-				Телефон: +7 (4932) 22-70-87<br>
-				<a href="processing.html" target="_blank">Согласие на обработку данных</a> | <a href="politic.html" target="_blank">Политика конфиденциальности</a><br><a href="broadcast.html" target="_blank">Описание процесса передачи данных</a>
+			<div class="title">
+				Доставка и оплата
 			</div>
+			<span>Мы соберем и отправим ваш заказ в течение 1-2 дней! Собираем заказы без выходных!</span>
+			<div class="payment-title">
+				Мы принимаем следующие формы оплаты:
+			</div>
+			<div class="payment-title">Наличные платежи (оплата при получении):</div>
+			<div class="payment__list">
+				<ul>
+					<li>При расчете с курьером (доставка по г. Владимиру и области);</li>
+					<li>При самовывозе.</li>
+				</ul>
+			</div>
+			<div class="payment-title">Безналичные платежи (предоплата):</div>
+			<div class="payment__list">
+				<ul>
+					<li>Перевод денег на карту Сбербанка</li>
+					<li>Оплата по счету</li>
+				</ul>
+			</div>
+			<div class="payment__text">
+				После того, как заказ будет собран, с вами свяжется менеджер и согласует все детали заказа и оплаты/доставки.
+			</div>
+			<div class="payment-title">
+				Стоимость доставки г. Владимир:
+			</div>
+			<div class="payment__list">
+				<ul>
+					<li>Самовывоз - бесплатно (товар бронируется на 3 дня после согласования состава заказа с менеджером). Если заказ идет без предоплаты и не забирается в течение 3 дней, тогда он автоматически расформировывается и в будущем мы сотрудничаем исключительно по 100% предоплате.</li>
+					<li>Курьерская доставка по г. Владимиру - 150 рублей, доставка в пригородные населенные пункты и по Владимирской области обговаривается индивидуально.</li>
+				</ul>
+			</div>
+			<div class="payment__text">
+				При заказе от 3000 рублей - доставка по городу бесплатно.
+			</div>
+			<div class="payment-title">
+				Стоимость доставки Почта России, СDEK:
+			</div>
+			<div class="payment__text">
+				300 рублей.
+			</div>
+			<div class="payment__text">
+				Бесплатно для заказов от 3000 рублей.
+			</div>
+			<div class="payment-title">
+				Стоимость доставки до ТК "Деловые линии", "Кит":
+			</div>
+			<div class="payment__text">
+				Бесплатно ДО транспортной компании, оплата самой доставки до адресата по тарифам транспортной компании.
+			</div>
+			<div class="payment-title">
+				Заказы через Почту России и транспортными компаниями мы отправляем только после полной предоплаты. Заказы по почте отправляются обычной ценной посылкой. Вы не должны ничего оплачивать отдельно на почте. В случае требования произвести оплату за получение посылки обращайте внимание операторов на отсутствие ценности в разделе "наложенный платеж".
+			</div>
+			<div class="payment__text">
+				При получении товара покупателю необходимо удостовериться в полной комплектации. Претензии по количеству и качеству товаров принимаются в течение 14 дней с момента приобретения в нашем магазине.
+			</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__item item-map">
+					<div class="footer__item-title">Адрес:</div>
+					<span>г.Владимир, ул. Ставровская, д. 4</span>
+				</div>
+				<div class="footer__item item-phone">
+					<div class="footer__item-title">Телефон:</div>
+					<a href="tel:+79953139055">+7 (995) 313-90-55</a>
+				</div>
+				<div class="footer__item item-mail">
+					<div class="footer__item-title">Написать нам:</div>
+					<a href="mailto:info-timeforyou@mail.ru">info-timeforyou@mail.ru</a>
+				</div>
+				<div class="footer__item item-clock">
+					<div class="footer__item-title">Режим работы:</div>
+					<span>пн-пт: с 9:00 до 18:00</span>
+					<span>сб-вс: с 10:00 до 18:00</span>
+				</div>
+			</div>
+			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A818a9008e20f3b729b781b6d77cc90acb483035e9685f253bfc7c7ee2ef15a63&amp;source=constructor" height="362" frameborder="0"></iframe>
 		</div>
 	</footer>
 
